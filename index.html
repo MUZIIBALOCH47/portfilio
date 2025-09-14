@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="eng" dir="left">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muzamil — Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container">
+        <a class="logo" href="#">Welcome to Muzamil,s portfolio</a>
+        <button id="navToggle" aria-label="menu">☰</button>
+        <nav id="mainNav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div>
+            <h1>Salam, I'm <span class="accent">Muzamil</span></h1>
+            <p class="lead">
+              I’m Muzamil Bhangwar, a passionate learner and aspiring Full Stack
+              Web Developer from Pakistan. Currently in 11th grade, I’ve already
+              built a strong foundation in HTML, CSS, and JavaScript, and I’m
+              continuously improving my skills with modern frameworks and tools.
+              My dream is to work with top global tech companies like Microsoft
+              or Google by 2030, InshaAllah. Alongside this long-term vision,
+              I’m also starting my freelancing journey to help clients with
+              creative, responsive, and professional web solutions. With a mix
+              of dedication, curiosity, and consistency, I’m on a mission to
+              transform ideas into beautiful digital experiences. 🚀
+            </p>
+            <div class="cta">
+              <a class="btn" href="#projects">My Work</a>
+              <a class="btn btn-outline" href="#contact">Hire Me</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="card-inner">
+              <img
+                src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=600&q=60"
+                alt="profile"
+              />
+              <div class="card-info">
+                <strong>Muzamil Baloch</strong>
+                <small>Web Developer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            Motivated and detail-oriented Frontend Web Developer with expertise
+            in building responsive and user-friendly websites using HTML, CSS,
+            JavaScript, and React. Passionate about clean code, modern UI
+            design, and delivering high-quality projects. Strong problem-solving
+            skills with a focus on performance, scalability, and user
+            experience. Seeking opportunities to contribute to dynamic teams and
+            grow as a professional developer.
+          </p>
+          <div class="skills">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span
+            ><span>React</span><span>Responsive</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <!-- Project card template -->
+            <article class="project">
+              <div
+                class="proj-img"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1526378722088-5d7a6f9b64b1?auto=format&fit=crop&w=800&q=60');
+                "
+              ></div>
+              <div class="proj-body">
+                <h3>Stylish Calculator</h3>
+                <p>
+                  HTML/CSS/JS calculator with modern UI and keyboard support.
+                </p>
+                <div class="proj-links">
+                  <a href="#">Live</a><a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div
+                class="proj-img"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60');
+                "
+              ></div>
+              <div class="proj-body">
+                <h3>Portfolio Template</h3>
+                <p>Responsive portfolio layout using modern CSS techniques.</p>
+                <div class="proj-links">
+                  <a href="#">Live</a><a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div
+                class="proj-img"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=60');
+                "
+              ></div>
+              <div class="proj-body">
+                <h3>Project Three</h3>
+                <p>Short description of the project and tech used.</p>
+                <div class="proj-links">
+                  <a href="#">Live</a><a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Interested in working together? Send a message:</p>
+          <form id="contactForm">
+            <input type="text" name="name" placeholder="Naam" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        © <span id="year"></span> Muzamil — All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
