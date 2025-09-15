@@ -63,10 +63,11 @@ body{margin:0; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto; 
   .projects-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:600px){
-  #navToggle{display:block}
+  #navToggle{display:none;}
   #mainNav{position:fixed; right:0; top:60px; background:var(--card); width:200px; height:calc(100% - 60px); transform:translateX(100%); transition:transform .28s; flex-direction:column; padding:18px}
   #mainNav.open{transform:translateX(0)}
   .projects-grid{grid-template-columns:1fr}
 }
+
 
 
